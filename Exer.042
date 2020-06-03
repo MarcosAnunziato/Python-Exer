@@ -1,0 +1,15 @@
+# Desafio 42
+a = float(input('Digite o valor do lado A: '))
+b = float(input("digite o valor do lado B: "))
+c = float(input('Digite o valor do lado C: '))
+
+if b - c < a < b + c and a - c < b < a + c and a - b < c < a + b:
+    print('Sim, é possivel construir um triangulo.')
+    if a == b != c or a == c != b or b == c != a:
+        print("É um triangulo ISÓSCELES.")
+    elif a == b == c:
+        print('É um triangulo EQUILÁTERO.')
+    else:
+        print('È um triangulo ESCALENO.')
+else:
+    print('Impossivel construir um trinangulo.')

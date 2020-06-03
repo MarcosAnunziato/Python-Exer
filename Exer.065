@@ -1,0 +1,27 @@
+# Desafio 65
+
+
+lista = []
+n = 0
+n = int(input('Digite um número: '))
+
+lista.append(n)
+
+
+cont = 0
+s = 0
+while True:
+    n = int(input('Digite um número: '))
+    if n == 999:
+        break
+    lista.append(n)
+    cont += 1
+    s += n
+    media = s / cont
+print(f'Total de números digitados é {cont}\n  a soma dos números é {s}\n e a média dos números é de {media:.0f}')
+media = s / cont
+lista_ordenada = sorted(lista)
+print(lista_ordenada)2
+print(f'O menor número digitado é',lista_ordenada[0])
+print(f'O maior número digitado é',lista_ordenada[-1])
+print('FIM')

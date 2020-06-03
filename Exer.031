@@ -1,0 +1,8 @@
+distotal = float(input('Digite a distancia da viagem em quilometros: '))
+kmmenor = 0.50
+kmmaior = 0.45
+if distotal < 200:
+    print('Valor da passagem é de R${:.2f}'.format(distotal * kmmenor))
+else:
+    print('Valor da passagem é de R${:.2f}'.format(distotal * kmmaior))
+print('Boa Viagem!')

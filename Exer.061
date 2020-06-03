@@ -1,0 +1,35 @@
+'''
+# Desafio 061
+# progressão Aritmética
+i = int(input('início: '))
+p = int(input('Passo: '))
+f = int(p*10+i)
+for c in range(i, f, p):
+    print(c)
+print('Fim')'''
+
+c = 1 # contador começa com 1
+i =  int(input('início: '))
+p =  int(input('Passo: '))
+r = 0
+while c <= 10 : # enquanto contador for menor que 10
+    print('contador {} e progressão {}'.format(c, i))
+    i = i + p
+    c = c + 1 # ou c += 1
+
+print('Fim')
+'''
+# Desafio 061   ====> SOLUÇÃO DO GUANABARA
+cont = 1 # contador começa com 1
+primeiro =  int(input('Primeiro termo: '))
+razão =  int(input('Razão da PA: '))
+termo = primeiro
+
+while cont <= 10:  # enquanto contador for menor que 10
+    #print('contador {} e progressão {}'.format(cont, primeiro))
+    print('{} ->'.format(termo), end='')
+    termo += razão
+    cont += 1
+print('Fim')'''
+
+

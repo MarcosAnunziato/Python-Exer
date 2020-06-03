@@ -1,0 +1,21 @@
+# Desafio 081
+
+lista = []
+r = ' '
+
+while True:
+    n = int(input('Digite um valor: '))  # incluido itens na lista
+    r = str(input('Quer continuar? [S/N]'))
+    if r in 'Nn':
+        break
+
+    if n not in lista:
+        lista.append(n)
+
+print(f'Você digitou {len(lista)} elementos')
+lista.sort(reverse=True)
+print(f'O valores em ordem descrescente são {lista}')
+
+print('Fim')
+
+

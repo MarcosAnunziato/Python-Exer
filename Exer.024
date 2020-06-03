@@ -1,0 +1,9 @@
+
+nome = str(input('Digite o nome de uma cidade: ')).upper().strip()
+lista = (nome.split())
+primeiro = lista[0]
+if primeiro == 'SANTO':
+    print('Cidade começa com SANTO')
+else:
+    print('Cidade não começa com SANTO')
+print('FIM')

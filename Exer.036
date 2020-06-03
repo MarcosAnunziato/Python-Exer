@@ -1,0 +1,11 @@
+valor_da_casa = float(input('Digite o valor do imovel a ser adquirido: '))
+quantos_anos = float(input('Digite o prazo de pagamento em anos : '))
+valor_da_prestacao = valor_da_casa / (quantos_anos * 12)
+salário = float(input('Digite o salario total bruto: '))
+salario_prestacao = salário * 30 / 100
+vlrminimo = valor_da_prestacao * 100 / 30
+if valor_da_prestacao > salario_prestacao:
+    print(f'Renda insuficiente, sua renda é de R$ {salário:.2f} para fiananciamento é necessario uma renda de R$ {vlrminimo:.2f}.')
+else:
+    print(f'Parabéns  seu financiamanto foi aprovado com uma prestação de R$ {valor_da_prestacao:.2f}.')
+print('\33[7:41:44mObrigado por nos procurar!\33[m')

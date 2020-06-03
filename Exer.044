@@ -1,0 +1,29 @@
+# Desafio 44
+
+valor = float(input('Digite o valor do compra: '))
+parc = 3
+avista = valor * 90 /100
+cartao = valor * 95 /100
+duas_vezes = valor / 2
+valor_juros = valor * 120 /100
+tres_vezes = valor_juros / parc
+
+menu = 0
+
+while menu != 5:
+    menu = int(input(' 1 [A vista 10% desc]  2 [Cartão 5 % desc] 3 [duas Vezes preço normal] 4 [Parcelado 20% juros]  5 [SAIR] '))
+    if menu == 4:
+        parc = int(input(' Pagamento Parcelado Digite o número de parcelas: '))
+        tres_vezes = (valor_juros / parc)
+        print(f'Pagamento em  {parc} parcelas  de R${tres_vezes:.2f} com 20% de acrescimo.')
+    elif menu == 1:
+        print(f'Pagamento à vista com 10% de desconto R${avista:.2f}.')
+    elif menu == 2:
+        print(f'Pagamento no cartão com 5% de desconto R${cartao:.2f}.')
+    elif menu == 3:
+        print(f'Preço normal sem desconto R${duas_vezes:.2f}.')
+    elif menu == 5:
+        print('Fim')
+    else:
+        print('Opção invalida tente novamente.')
+print('Obrigado! e Volte Sempre.')

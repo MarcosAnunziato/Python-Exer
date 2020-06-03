@@ -1,0 +1,8 @@
+frase = str(input('Digite uma frase: ')).strip().upper()
+frase = ''.join(frase.split())
+print(frase)
+if frase == frase[::-1]:
+    print('É um PALÍNDROMO!')
+else:
+    print('Não é um PALÍNDROMO!')
+print('Fim')

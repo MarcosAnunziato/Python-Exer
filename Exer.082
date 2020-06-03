@@ -1,0 +1,24 @@
+#Desafio 082
+
+
+completa = []
+pares = []
+impar = []
+r = ' '
+while True:
+    n = int(input('Digite um valor: '))
+
+    completa.append(n)
+    if n % 2 == 0:
+        pares.append(n)
+    else:
+        impar.append(n)
+    r = str(input('Quer continuar? [S/N]')).upper()
+    if r in 'Nn':
+        break
+
+
+
+print(f'Está é lista completa {completa}')
+print(f'Este são os números pares {pares}')
+print(f'Este são os números impares {impar}')

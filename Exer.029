@@ -1,0 +1,16 @@
+#Desafio 029
+
+from random import randint
+velocimetro = randint(1,240)
+
+
+velocidade = int(80)
+velocimetro = int(input('Digite velocidade atual '))
+acima = velocimetro - velocidade
+valor = 7
+multa = valor * acima
+if velocimetro > 80:
+    print(f'Sua velocidade está acima do permitido\nem {acima} km/h Você foi multado em R${multa:.2f}.')
+else:
+    print(f'Mantenha velocidade abaixo de 80 km/h,\nsua velocidade atual é de {velocimetro} km/h.')
+print('Fim')

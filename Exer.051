@@ -1,0 +1,7 @@
+# progressão Aritmética
+i = int(input('início: '))
+p = int(input('Passo: '))
+f = int(p*10+i)
+for c in range(i, f, p):
+    print(c)
+print('Fim')

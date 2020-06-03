@@ -1,0 +1,30 @@
+# Desafio 078
+
+valores = []
+for cont in range(0,5):
+    valores.append(int(input('Digite um valor: ')))    # incluido itens na lista
+lista_ordenada = sorted(valores)
+maior = lista_ordenada[-1]
+menor = lista_ordenada[0]
+print(f'Voce Digitou os valores {valores}.')
+#print(lista_ordenada)
+#print(max(lista_ordenada))
+#print(min(lista_ordenada))
+#posicaomaior =  valores.index(maior)
+#print(posicaomaior)
+#posicaomenor = valores.index(menor)
+#print(posicaomenor)
+print(f'O maior valor digitado foi {maior} nas posições ', end='')
+for i, v in enumerate(valores):
+    if v == maior: # pode ser assm tbem lista valores na posição ... if valores [i] == maior
+        print(f'{i}... ', end='')
+print()
+print(f'O menor valor digitado foi {menor} mas posições ', end='')
+for i, v in enumerate(valores):
+    if v == menor:
+        print(f'{i}... ', end='')
+print()
+print(' Cheguei ao final da lista.')
+
+
+

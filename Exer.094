@@ -1,0 +1,42 @@
+# Desafio 094
+
+print('*'*30)
+pessoas = dict()
+lista = list()
+soma = média = 0
+
+while True:
+    pessoas['nome'] = str(input('Nome: ')).title()
+    pessoas['sexo'] = str(input('Sexo [M\F]:')).upper()
+    pessoas['idade'] = int(input('Idade: '))
+    soma += pessoas['idade']
+    lista.append(pessoas.copy())
+    resp = str(input('Quer continuar [S/N] ')).upper()
+    if resp in 'Nn':
+        break
+
+print('*'*38)
+print(f'Ao todo temos {len(lista)} pessoas cadastrada.')
+média = soma / len(lista)
+print('*'*38)
+print(f'A média de idade é de {média:5.2f} anos .')
+print('*'*38)
+print('As mulheres cadastradas foram ', end='')
+for p in lista:
+    if p['sexo'] in 'Ff':
+        print(f'{p["nome"]} ', end='')
+print()
+print('*'*38)
+print('Lista das pessoas que estão acima da média', end='')
+print()
+for i in lista:
+    if i['idade'] > média:
+        print(f' {i["nome"]} ', end='')
+
+for p in lista:
+    if p['idade'] >= média:
+        print('     ', end='')
+        for k, v in p.items():
+            print(f'{k} = {v} ; ', end='')
+        print()
+print('Encerrado')

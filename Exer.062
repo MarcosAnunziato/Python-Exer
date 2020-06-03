@@ -1,0 +1,20 @@
+
+# Desafio 061
+print('*-'*10)
+print('Gerador de PA')
+print('*-'*10)
+cont = 1 # contador começa com 1
+primeiro =  int(input('Primeiro termo: '))
+razão =  int(input('Razão da PA: '))
+termo = primeiro
+total = 0
+mais = int(input('Digite quantos termos: '))
+while mais != 0:
+    total = total + mais
+    while cont <= total:  # enquanto contador for menor que 10
+        print('{} ->'.format(termo), end='')
+        termo += razão
+        cont += 1
+    print('PAUSA')
+    mais = int(input('Quantos termos você quer mostrar a mais? '))
+print('Progressão finalizada com {} termos  '.format(total))

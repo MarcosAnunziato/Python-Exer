@@ -1,0 +1,13 @@
+#Desafio 027
+
+nome = str(input('Digite o seu nome: ')).upper().strip()
+lista = (nome.split())
+primeiro = lista[0]
+ultimo = lista[-1]
+
+print('-='*30)
+print(f'Nome: {nome}.')
+print(f'O primeiro nome  é {primeiro}.')
+print(f'O último nome  é {ultimo}.')
+print('-='*30)
+print('Fim')

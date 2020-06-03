@@ -1,0 +1,13 @@
+# Desafio 090
+aluno = dict()
+aluno['nome'] = str(input('Nome: '))
+aluno['média'] = float(input('Média: '))
+print('_-'*20)
+print(f'Nome é igual a  {aluno["nome"]}')
+print(f'Média é igual  {aluno["média"]}')
+
+if aluno["média"] >= 7:
+    print('Situação é igual a Aprovado')
+else:
+    print('Situação é igual a Reprovado')
+print('_-'*20)

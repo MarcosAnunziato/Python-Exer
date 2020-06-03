@@ -1,0 +1,14 @@
+# Desafio 079
+lista = []
+r = ' '
+while True:
+    lista.append(int(input('Digite um valor: ')))    # incluido itens na lista
+    if i in lista.index():
+      print('Esse valor já está na lista.')
+    r = str(input('Quer continuar [S/N] ')).strip().upper()[0]
+    while r not in 'SN':
+        if r == 'N':
+            print(lista)
+        break
+
+print('Fim')

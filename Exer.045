@@ -1,0 +1,52 @@
+# Desafio 045
+import random
+from time import sleep
+itens = ('Pedra', 'Papel', 'tesoura', 'Desistir')
+computador = random.randint(0,2)
+print(computador)
+print('O computador escolheu {}'.format(itens[computador]))
+
+print('#'* 30)
+print('      Vamos Jogar?..')
+print('#'*30)
+print('')
+menu = 0
+while menu != 3:
+    menu = int(input(' Escolha 0 [[PEDRA]] 1 [[PAPEL]] 2 [[TESOURA]] 3[[DESISTIR]] '))
+    if menu == 3:
+        break
+    print('              JO                     ')
+    sleep(0.50)
+    print('                KEN                 ')
+    sleep(0.50)
+    print('                     PO!!!')
+    sleep(0.50)
+    computador = random.randint(0,2)
+    print('-*'* 13)
+    print('Computador jogou {}'.format(itens[computador]))
+    print('Jogador    jogou {}'.format(itens[menu]))
+    print('-*' * 13)
+
+    if menu == computador:
+        print('Empatamos')
+    elif menu == 0 and computador == 1:
+        print('Pedra vs Papel')
+        print('JOGADOR  ganhou')
+    elif menu == 1 and computador == 2:
+        print('Papel vs Tesoura')
+        print('jOGADOR ganhou')
+    elif menu == 2 and computador == 1:
+        print('tesoura  vs Papel')
+        print('jOGADOR ganhou')
+    elif computador == 0 and menu == 1:
+        print('Pedra vs Papel')
+        print('Computador ganhou')
+    elif computador == 1 and menu == 2:
+        print('Papel vs tesoura')
+        print('computador ganhou')
+    elif computador == 2 and menu == 0:
+        print('Tesoura vs Pedra')
+        print('Compudador ganhou')
+    else:
+        print('opção invalida . tente novamente')
+print('Fim do programa! Volte Sempre!')

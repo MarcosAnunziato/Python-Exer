@@ -1,0 +1,23 @@
+# Desafio 91
+from random import randint
+from time import  sleep
+from random import randint
+from operator import itemgetter
+ranking = list()
+play = dict()
+
+
+play['jogador 1']: ['dado1'] = int(randint(1, 6))
+play['jogador 2']: ['dado2'] = int(randint(1, 6))
+play['jogador 3']: ['dado3'] = int(randint(1, 6))
+play['jogador 4']: ['dado4'] = int(randint(1, 6))
+
+for k, v in play.items():
+    print(f'O {k} tirou {v}')
+    sleep(1)
+
+ranking = sorted(play.items(), key = itemgetter(1), reverse=True)
+# Comandos para conclusão sendo o dicionario uma lista agora
+for i, v in enumerate(ranking):
+    print(f'   {i+1} lugar; {v[0]} com {v[1]}.')
+

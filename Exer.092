@@ -1,0 +1,20 @@
+
+# Desafio 92
+from datetime import datetime
+from datetime import date
+data_atual = date.today()
+ano = data_atual.year
+
+cadastro = dict()
+cadastro['nome'] = str(input('Nome: '))
+nasc = int(input('Ano de nascimento: '))
+cadastro['idade'] = ano - nasc
+cadastro['carteira de trabalho'] = int(input('Carteira de trabalho (0 não tem): '))
+if cadastro["carteira de trabalho"] != 0 :
+  cadastro['ano de contratação'] = int(input('Ano de contratação: '))
+  cadastro['aposentadoria'] = cadastro['ano de contratação'] + 35
+  cadastro['salário'] = float(input('Salário R$: '))
+  cadastro['aposentadoria'] = cadastro['idade'] + ((cadastro['ano de contratação'] + 35) - datetime.now().year)
+for k, v in cadastro.items():
+  print(f' - {k} tem o valor {v }')
+print('Fim')

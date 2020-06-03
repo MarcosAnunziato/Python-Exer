@@ -1,0 +1,9 @@
+# Desafio 073
+times = ('Flamengo', 'Santos', 'Palmeiras', 'Gremio', 'Athetico-PR', 'São Paulo',
+'Internacional', 'Corinthians', 'Fortaleza', 'Goias', 'Bahia', 'Vasco',
+'Athetico-MG', 'Fluminense', 'Botafogo', 'Ceara', 'Cruzeiro', 'CSA',
+'Chapecoense', 'Avai')
+print(f'Os cincos primeiros colocados são {times[0:5]}')
+print(f'Os últimos quatros classificados são {times[-5:]}')
+print(sorted(times))
+print(f'O Chapecoense esta na {times.index("Chapecoense")} posição') # só funciona com aspas dupla.

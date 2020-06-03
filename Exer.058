@@ -1,0 +1,14 @@
+# desafio 58
+from random import randint
+from time import sleep
+jogador = 0
+cont = 0
+computador = randint(1, 4)  # faz computador pensar
+print('Vou pensar em um número entre 0 e 10. Tente adivinhar...')
+while jogador != computador:
+  cont = cont + 1
+  jogador = int(input('Em que número eu pensei? '))
+  if  jogador != computador:
+    print('jogue de Novo')
+  if jogador == computador:
+      print(f'Você venceu com {cont} jogadas')

@@ -1,0 +1,8 @@
+#Desafio 026
+nome = str(input('Digite o seu nome: ')).upper().strip()
+print('-='*20)
+print(f'A letra A apareceu {nome.count("A")} vezes na frase.') # para usar f no lugar do format necessário Aspas dupla no "A"
+print(f'A primeira letra A apareceu na posição {nome.find("A")+1}')
+print(f'A última letra A apareceu na posição {nome.rfind("A")+1}')
+print('-='*20)
+print('Fim')

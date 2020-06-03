@@ -1,0 +1,9 @@
+# Desafio 35
+a = float(input('Digite o valor do lado A: '))
+b = float(input("digite o valor do lado B: "))
+c = float(input('Digite o valor do lado C: '))
+
+if b - c < a < b + c and a - c < b < a + c and a - b < c < a + b:
+    print('Sim, é possivel construir um triangulo.')
+else:
+    print('Impossivel construir um trinangulo.')

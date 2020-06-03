@@ -1,0 +1,11 @@
+idade = int(input('Digite a sua idade: '))
+passou = idade - 18
+falta = 18 - idade
+if idade == 18:
+    print('Hora  se alistar!')
+elif idade < 18:
+    print(f'Não chegou a hora ainda faltam {falta}')
+else:
+    print(f'Passou do tempo, deveria ser a {passou} anos atras.')
+print('== Fim do programa ==')
+

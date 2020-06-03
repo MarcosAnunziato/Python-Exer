@@ -1,0 +1,37 @@
+# Desafio 070
+item = ('produto', 'preco')
+print('='*50)
+print('{:-^50}'.format('CADASTRE de PRODUTOS'))
+print('='*50)
+preco_soma = 0
+cont_mais = 0
+menor = 0
+cont = 0
+barato = ''
+
+
+while True:
+    produto = str(input('Produto: ')).strip().upper()
+    preco = float(input('Preço: '))
+    cont += 1
+    preco_soma = preco + preco_soma
+    if preco > 1000:
+        cont_mais += 1
+    if cont == 1:
+        menor = preco
+        barato = produto
+    else:
+        if preco < menor:
+            menor = preco
+            barato = produto
+
+    r = ' '
+    while r not in 'SN':
+        r = str(input('Quer continuar [S/N] ')).strip().upper()[0]
+    if r == 'N':
+        break
+print(f'Total dos gastos {preco_soma:.2f}')
+print(f'O produto mais barato foi \033[00:31:44m{barato}\033[m que custa R${menor:.2f} ')
+print(f'Temos {cont_mais} produtos custando mais de R$1000,00')
+
+print('{:-^50}'.format('Fim do Cadastro'))

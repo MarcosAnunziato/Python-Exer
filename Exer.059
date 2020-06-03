@@ -1,0 +1,29 @@
+# desafio 059
+a = float(input('Digite um número: '))
+b = float(input('digite outro número: '))
+
+menu = 0
+while menu != 5:
+
+    menu = int(input('Digite 1 [SOMAR] 2 [MULTIPLICAR] 3 [MAIOR] 4 [NOVOS NUMEROS] 5 [SAIR] '))
+    lista = [a, b]
+    if menu == 4 :
+        print('novos números')
+        a = float(input('Digite um número: '))
+        b = float(input('digite outro número: '))
+
+    elif menu == 1:
+        print(a + b)
+    elif menu == 2:
+        print(a * b)
+    elif menu == 3:
+        lista = sorted(lista)
+        print(max(lista))
+    elif menu == 5:
+        print('fim')
+    else:
+        print('opção invalida . tente novamente')
+print('fim do programa! Volte Sempre!')
+
+
+
